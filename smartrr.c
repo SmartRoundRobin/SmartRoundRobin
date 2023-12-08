@@ -139,10 +139,10 @@ void smartRoundRobin(int n, struct Process processes[]) {
 int main() {
     // Example processes
     struct Process processes[] = {
-        {0, 12, 12, false,-1,0},
-        {1, 34, 34, false,-1,0},
-        {2, 8, 8, false,-1,0} , 
-        {3, 19, 19, false,-1,0}//,
+        {0, 26, 26, false,-1,0},
+        {1, 67, 67, false,-1,0},
+        {2, 82, 82, false,-1,0} , 
+        {3, 11, 11, false,-1,0}//,
         //{4, 9, 9, false}
     };
 
