@@ -132,17 +132,26 @@ void smartRoundRobin(int n, struct Process processes[]) {
     // Calculate Average Turnaround Time (ATAT) and Average Waiting Time (AWT)
     float avg_TAT = (float)total_TAT / n;
     float avg_WT = (float)total_WT / n;
-    printf("Average Turnaround Time (ATAT): %.2f\n", avg_TAT);
     printf("Average Waiting Time (AWT): %.2f\n", avg_WT);
+    printf("Average Turnaround Time (ATAT): %.2f\n", avg_TAT);
+    
 }
 
 int main() {
     // Example processes
     struct Process processes[] = {
-        {0, 26, 26, false,-1,0},
-        {1, 67, 67, false,-1,0},
-        {2, 82, 82, false,-1,0} , 
-        {3, 11, 11, false,-1,0}//,
+       {0, 30, 30, false,-1,0},
+        {1, 42, 42, false,-1,0},
+        
+        {2, 50, 50, false,-1,0} , 
+        {3, 85, 85, false,-1,0} ,
+         {4,97,97,false,-1,0}/**/
+         /**  {0, 40, 40, false,-1,0},
+        {1, 55, 55, false,-1,0},
+        {2, 60, 60, false,-1,0} , 
+        {3, 90, 90, false,-1,0} ,
+         {4,102,102,false,-1,0}/**/
+        // {4, 50, 50, false,-1,0}//,
         //{4, 9, 9, false}
     };
 

@@ -372,10 +372,13 @@ void smartRoundRobin(int n, struct Process readyp1[]) {
         total_WT += WT;
 
         printf("\npid : %d AT : %d BT : %d CT : %d  WT : %d Total : %d \n",readyp[i].pid,readyp[i].arrival_time,readyp[i].burst_time,readyp[i].completion_time,WT,TAT);
+        printf ("%d %d",total_TAT,total_WT);
 
         }
        // printf("Process %d --> TAT: %d, WT: %d\n", processes[i].pid, TAT, WT);
+      
     }
+    // printf ("%d %d",total_TAT,total_WT);
 
     // Calculate Average Turnaround Time (ATAT) and Average Waiting Time (AWT)
     float avg_TAT = (float)total_TAT / n;
@@ -387,10 +390,20 @@ void smartRoundRobin(int n, struct Process readyp1[]) {
 int main() {
     // Example processes
     struct Process processes[] = {
-       /**/ {0, 8, 8, false,-1,0,0,-1},
+
+
+
+      //  {0, 3, 3, false,-1,0,0,-1},
+        //{1, 6, 6, false,-1,0,1,-1},
+       // {2, 4, 4, false,-1,0,4,-1} , 
+        //{3, 2, 2, false,-1,0,6,-1} //,
+        //{4, 4, 4, false,-1,0,0,-1}
+       /**/
+        {0, 8, 8, false,-1,0,0,-1},
         {1, 6,6, false,-1,0,2,-1},
         {2,11, 11, false,-1,0,7,-1} , 
-        {3, 5, 5, false,-1,0,0,-1}/**/
+        {3, 5, 5, false,-1,0,0,-1}
+        /**/
 
         /** {0, 2, 2, false,-1,0,0,-1},
         {1, 5, 5, false,-1,0,0,-1},
